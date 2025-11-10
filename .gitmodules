@@ -1,0 +1,3 @@
+[submodule "assets/scripts/mixed_messages"]
+	path = assets/scripts/mixed_messages
+	url = https://github.com/BilliamButtlicker/mixed_messages
