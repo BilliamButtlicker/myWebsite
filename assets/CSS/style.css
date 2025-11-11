@@ -4,17 +4,17 @@
 
 body {
     display: grid;
-    grid-template-rows: 30% repeat(20, 10%);
+    grid-template-rows: 25% repeat(15, 10%);
     grid-template-columns: repeat(10, 10%); 
     background-color: lightblue;
+    margin: 0;
 }
-
-
 
 header {
     grid-row: 1 / 2;
     grid-column: 1/11;
     margin-top: 0;
+    padding-left: .5em;
     display: grid;
     grid-template-columns: repeat(10,10%);
     grid-template-rows: 100%;
@@ -30,16 +30,19 @@ nav {
     color: white;
     align-content: center;
     font-size: 40px;
+    padding-right: .5em;
 }
 
 nav li {
     display: inline-block;
     margin-right: .2rem;
-
+    border: .05em solid white;
 }
 
 nav a {
     text-decoration: none;
+    color: white;
+    padding: .5em;
 }
 
 nav a:visited {
@@ -64,11 +67,11 @@ main {
     grid-template-rows: repeat(10,10%);
     grid-template-columns: repeat(10,10%);
     align-content: center;
-    
+    padding-left: .5em;
 }
 
 #about-me {
-    grid-row: 1/15;
+    grid-row: 1/5;
     grid-column: 1/8;
     font-size: 30px;
 }
@@ -113,4 +116,10 @@ main {
     grid-row: 5/11;
     grid-column: 1/8;
     font-size: 30px;
+}
+
+#hobbies {
+    grid-row: 3/11;
+    grid-column: 8/11;
+    font-size: 20pt;
 }
