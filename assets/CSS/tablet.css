@@ -1,0 +1,16 @@
+@media screen and (max-width: 1079px) {
+    header {
+        grid-template-rows: 1fr .5fr;
+    }
+
+    #title {
+        grid-column: 1/11;
+        text-align: center;
+    }
+
+    nav {
+        grid-row: 2/3;
+        grid-column: 1/11;
+        justify-self: center;
+    }
+}

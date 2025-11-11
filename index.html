@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <title>My Home Page</title>
         <link rel="stylesheet" href="assets/CSS/style.css" type="text/CSS">
+        <link rel="stylesheet" href="assets/CSS/tablet.css" type="text/CSS">
+        <link rel="stylesheet" href="assets/CSS/mobile.css" type="text/CSS">
+        <link rel="stylesheet" href="assets/CSS/index.css" type="text/CSS">
         <script src="assets/scripts/fortune/fortune.js"></script>
         
     </head>
@@ -15,7 +18,7 @@
                     <li><a href="#title">Home</a></li>
                     <li><a href="#about-me">About Me</a></li>
                     <li><a href="#games">Games</a></li>
-                    <li><a href=""></a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -31,6 +34,7 @@
 
             <!-- TODO: clicking the button is causing the header to grow in size (i think the body grid itself is growing) amd i have no idea why... -->
             <section id="fortune-teller">
+                <h2 id="fortune-desc">This is my first JavaScript project!</h2>
                 <button onclick="tellFortune()">Tell Fortune</button>
                 <p id="fortune">Click the button for a fortune...!</p>
             </section>
@@ -54,18 +58,19 @@
             <!-- TODO: turn into a slider with js -->
             <section id="hobbies">
                 <h2>My hobbies!</h2>
-                <img id="hob-img" src="" alt="">
                 <h3 id="hob-title"></h3>
                 <p id="hob-desc"></p>
                 <input id="sliderIndex" type="number" value="0" hidden>
                 <a id="hob-link" href="">Read more!</a>
+                <img id="hob-img" src="" alt="">
             </section>
         </main>
             
 
         <footer>
-            <ul class="contact">
-                <!-- contact details here -->
+            <ul id="contact">
+                <li><a href="">Phone: 00000 000 000</a></li>
+                <li><a href="">Email: nowhere@nowhereland.gov</a></li>
             </ul>
         </footer>
 

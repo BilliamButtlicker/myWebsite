@@ -1,41 +1,58 @@
+/* styling for all pages */
 * {
     box-sizing: border-box;
 }
 
+/* makes the body a grid with one large row at the top for the header, followed by repeating 10% sections */
 body {
     display: grid;
-    grid-template-rows: 25% repeat(15, 10%);
-    grid-template-columns: repeat(10, 10%); 
+    grid-template-rows: 10% repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr); 
     background-color: lightblue;
     margin: 0;
 }
 
 header {
     grid-row: 1 / 2;
-    grid-column: 1/11;
+    grid-column: 1 / 11;
     margin-top: 0;
     padding-left: .5em;
     display: grid;
-    grid-template-columns: repeat(10,10%);
+    grid-template-columns: repeat(10,1fr);
     grid-template-rows: 100%;
     background-color: blue;
     height: 80%;
     align-self: center;
 }
 
+/* nav bar and title styling */
+#title {
+    grid-column: 1/5;
+    font-size: 60px;
+    color: white;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    align-content: center;
+}
+
 nav {
     grid-row: 1/2;
-    grid-column: 7/11;
+    grid-column: 5/11;
     justify-self: right;
     color: white;
     align-content: center;
-    font-size: 40px;
-    padding-right: .5em;
+    font-size: 25pt;
+    padding-right: .3em;
+}
+
+nav ul {
+    padding-left: 0;
 }
 
 nav li {
     display: inline-block;
-    margin-right: .2rem;
+    margin-right: .15rem;
     border: .05em solid white;
 }
 
@@ -50,76 +67,24 @@ nav a:visited {
 
 }
 
-#title {
-    grid-column: 1/7;
-    font-size: 60px;
-    color: white;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    align-content: center;
-}
-
 main {
     display: grid;
     grid-row: 2/20;
     grid-column: 1/11;
-    grid-template-rows: repeat(10,10%);
-    grid-template-columns: repeat(10,10%);
+    grid-template-rows: repeat(10,1fr);
+    grid-template-columns: repeat(10,1fr);
     align-content: center;
     padding-left: .5em;
+    padding-right: .5em;
+    
 }
 
-#about-me {
-    grid-row: 1/5;
-    grid-column: 1/8;
-    font-size: 30px;
+section {
+    padding: .5em;
 }
 
-#fortune-teller {
-    grid-row: 1/3;
-    grid-column: 9/11;
-    font-size: 20px;
-    align-items: center;
-    justify-items: center;
-    display: grid;
-    height: 100%;
-    grid-template-rows: 50% 50%;
-}
-
-#fortune-teller button {
-    grid-row: 1/2;
-    grid-column: 1/2;
-    width: 80%;
-    height: 80%;
-    font-size: 40px;
-    background-color: darkgreen;
-    color: white;
-    border: .2em solid purple;
-    font-weight: bold;
-}
-
-#fortune-teller button:hover {
-    background-color: green;
-    transform: scale(1.25);    
-}
-
-#fortune {
-    align-self: center;
-    grid-row: 2/3;
-    grid-column: 1/2;
-    text-align: center;
-    margin: 0;
-}
-
-#games {
-    grid-row: 5/11;
-    grid-column: 1/8;
-    font-size: 30px;
-}
-
-#hobbies {
-    grid-row: 3/11;
-    grid-column: 8/11;
+footer {
+    grid-column: 1/11;
     font-size: 20pt;
 }
+

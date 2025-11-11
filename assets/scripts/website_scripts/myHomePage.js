@@ -19,11 +19,11 @@ const codingSince = () => {
 codingSince();
 
 const slider = () => {
-    let hobImgs = ['','']
-    let hobAlts = ['Photo of my playing the piano','Languages photo']
+    let hobImgs = ['assets/media/img/stock piano img.jpg','assets/media/img/stock language img.jpg']
+    let hobAlts = ['Piano photo','Languages photo']
     let hobbies = ['Piano','Languages'];
     let description = [
-        'I\'ve always loved to play the piano - one of my favourite pastimes is sitting down and working out the notes and chords of a new sog I\'ve discovered!',
+        'I\'ve always loved to play the piano - one of my favourite pastimes is sitting down and working out the notes and chords of a new song I\'ve discovered!',
         'Languages play a huge part in all of our lives. I grew up speaking English and Swedish, but languages are not only verbal...'
     ];
     let link = ['hobbies/piano.html','hobbies/languages.html'];
@@ -52,3 +52,4 @@ const slider = () => {
 }
 slider();
 setInterval(function() {slider()}, 5000);
+
