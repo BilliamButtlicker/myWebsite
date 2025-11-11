@@ -3,12 +3,13 @@
     box-sizing: border-box;
 }
 
-/* makes the body a grid with one large row at the top for the header, followed by repeating 10% sections */
+/* makes the body a grid with one large row at the top for the header, followed by 10 repeating sections */
 body {
     display: grid;
     grid-template-rows: 10% repeat(10, 1fr);
     grid-template-columns: repeat(10, 1fr); 
-    background-color: lightblue;
+    background-color: rgb(2, 115, 152);
+    color: white;
     margin: 0;
 }
 
@@ -20,7 +21,7 @@ header {
     display: grid;
     grid-template-columns: repeat(10,1fr);
     grid-template-rows: 100%;
-    background-color: blue;
+    background-color: rgb(1, 1, 180);
     height: 80%;
     align-self: center;
 }
@@ -34,6 +35,21 @@ header {
     width: 100%;
     margin: 0;
     align-content: center;
+    text-shadow: 1px 1px black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+
+a:visited {
+    color:white;
 }
 
 nav {
@@ -62,10 +78,7 @@ nav a {
     padding: .5em;
 }
 
-nav a:visited {
-    color:white;
 
-}
 
 main {
     display: grid;
@@ -81,6 +94,7 @@ main {
 
 section {
     padding: .5em;
+    border: .1em solid white;
 }
 
 footer {

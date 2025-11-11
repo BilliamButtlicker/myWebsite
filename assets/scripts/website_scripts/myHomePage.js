@@ -12,7 +12,7 @@ const codingSince = () => {
 
     // lists years as well if over 365 days
     years = Math.floor(timeCoding / 365);
-    timeCoding > 365 ? timeCoding = years + ' years and' + (timeCoding%365) : timeCoding = timeCoding;
+    timeCoding > 365 ? years > 1 ? timeCoding = years + ' years and ' + (timeCoding%365) : timeCoding = years + ' year and ' + (timeCoding%365) : timeCoding = timeCoding;
     document.getElementById('time-coding').innerHTML = timeCoding + ' days';
 }
 
