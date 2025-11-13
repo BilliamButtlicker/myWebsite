@@ -1,3 +1,23 @@
-@media screen and (max-width:480px) {
+@media screen and (max-width:640px) {
     
+    header {
+        grid-template-rows: 1fr .5fr;
+    }
+
+    #title {
+        grid-column: 1/11;
+        font-size: 40pt;
+    }
+    
+    .m-nav {
+        display: inline-block;
+        grid-row: 2/3;
+        grid-column: 1/11;
+        justify-self: center;
+    }
+
+    .nav {
+        display: none;
+    }
+
 }

@@ -8,7 +8,7 @@ body {
     display: grid;
     grid-template-rows: 10% repeat(10, 1fr);
     grid-template-columns: repeat(10, 1fr); 
-    background-color: rgb(2, 115, 152);
+    background-color: aqua;
     color: white;
     margin: 0;
 }
@@ -24,6 +24,7 @@ header {
     background-color: rgb(1, 1, 180);
     height: 80%;
     align-self: center;
+    
 }
 
 /* nav bar and title styling */
@@ -35,6 +36,7 @@ header {
     width: 100%;
     margin: 0;
     align-content: center;
+    text-align: center;
     text-shadow: 1px 1px black;
 }
 
@@ -78,13 +80,15 @@ nav a {
     padding: .5em;
 }
 
-
+.m-nav {
+    display: none;
+}
 
 main {
     display: grid;
     grid-row: 2/20;
     grid-column: 1/11;
-    grid-template-rows: repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
     grid-template-columns: repeat(10,1fr);
     align-content: center;
     padding-left: .5em;
@@ -94,11 +98,18 @@ main {
 
 section {
     padding: .5em;
-    border: .1em solid white;
+    border: .1em solid navy;
+    border-radius: .5em;
+    margin: .2em;
+    background-color: rgb(2, 115, 152);
 }
 
 footer {
     grid-column: 1/11;
     font-size: 20pt;
+    background-color: rgb(1, 1, 180);
 }
 
+footer li {
+    list-style-type: none;
+}

@@ -12,10 +12,8 @@
     align-items: center;
     justify-items: center;
     display: grid;
-    height: 100%;
+    background-color: blueviolet;
     grid-template-rows: 1fr 1fr 1fr;
-    /* maybe remove border, doesn't look that good at the moment... */
-    border: .1em solid white;
     text-align: center;
 }
 
@@ -25,14 +23,15 @@
     width: 80%;
     height: 80%;
     font-size: 40px;
-    background-color: darkgreen;
+    background-color: navy;
     color: white;
     border: .2em solid purple;
+    border-radius: .5em;
     font-weight: bold;
 }
 
 #fortune-teller button:hover {
-    background-color: green;
+    background-color: rgb(26, 78, 236);
     transform: scale(1.25);    
 }
 
@@ -57,7 +56,6 @@
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: .5fr repeat(3, 1fr);
-
 }
 
 #hobbies * {
@@ -138,5 +136,26 @@
         grid-row: 4;
         grid-column: 8/11;
         font-size: 20pt;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    
+    #hob-title {
+        grid-row: 2/3;
+        align-self: start;
+    }
+
+    #hob-desc {
+        grid-row: 2/4;
+        grid-column: 1/11;
+        align-self: center;
+    }
+    
+    #hob-img {
+        grid-row: 4;
+        grid-column: 1/3;
+        justify-self: start;
+        align-self: start;
     }
 }
